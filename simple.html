@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Web</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="simplewebrtc.js"></script>
+	<script type="text/javascript" src="peer.js"></script>
+
+	<script type="text/javascript" src="webrtc-simplewebrtc.js"></script> 
+</head>
+
+<body>
+	<h1 id="title">Create tour own private multi-party chatroom</h1>
+	<form id="createRoom">
+		<input id="sessionInput"/>
+		<button type="submit">Create It!</button>
+	</form>
+
+	<button id="screenShareButton">OK</button><br/>
+	<span id="subTitle">(http required for screensharing to work)</span>
+
+	<div id="roomLink" style="font-size:18px; color: #F00;"></div>
+	<video id="localVideo" width="180" style="margin-top:15px;"></video>
+
+	<div id="remotes"></div>
+</body>
+</html>

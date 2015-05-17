@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Web</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="peer.js"></script>
+
+	<script type="text/javascript" src="webrtc-simplewebrtc.js"></script> 
+</head>
+
+<body>
+	<div id="video-container">
+		Your freind <video id="thier-video" autoplay class="thier-video"></video>
+		<video id="my-video" muted="true" autoplay class="thier-video"></video>You
+
+	</div>
+
+	<div>
+		<h2>Super0simple PeerJS Video chat with manual signlling</h2>
+
+		<div id="step1">
+			<p>Please click 'allow' on the top of the screen so we can access your webcam and microphone for calls</p>
+			<div id="step1-error">
+				<p>Failed to access the webcam and microphone. MAke sure to run this demo on an http server and lick allow when asked for permission by the browser.</p>
+				<a href="#" id="step1-retry" class="button">Try again</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="step2">
+		<p>Your name id: <span id="my-id">...</span></p>
+		<p>Share this id with others so they can call you</p>
+		<p><span id="subhead">Make a call</span><br>
+			<input type="text" placeholder="Call user id..." id="callto-id">
+			<a href="#" id="make-call">Call</a>
+		</p>
+	</div>
+
+	<div id="step3">
+		<p>Currently in call with <span id="thier-id">...</span></p>
+		<p><a href="#" id="end-call">End call</a></p>
+	</div>
+</body>
+</html>
