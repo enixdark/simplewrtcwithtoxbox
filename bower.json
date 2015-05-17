@@ -1,0 +1,19 @@
+{
+  "name": "N",
+  "version": "0.0.0",
+  "authors": [
+    "enixdark <cqshinn92@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "simplewebrtc": "~1.15.3"
+  }
+}
